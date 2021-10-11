@@ -10,7 +10,7 @@ pytorch 1.6
 ### Training
 
 We provide examples for optimistic BLO.
-![avatar][eq20.png]
+![avatar](eq20.png)
 
 You can adjust the algorithm through parameter setting. We will give the default setting in the following example.
 The results will be saved in `./result_{time.strftime("%Y_%m_%d_%H_%M_%S")}.csv`
