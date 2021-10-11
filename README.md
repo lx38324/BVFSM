@@ -10,10 +10,9 @@ pytorch 1.6
 ### Training
 
 We provide examples for optimistic BLO.
-$\begin{aligned}
-    & \min_{ \x \in \mathbb{R}, \y \in \mathbb{R}^n} \Vert \x-a\Vert^2+\Vert \y-a-\mathbf{c}\Vert^2 \\
-  & \text{\ s.t.\ }\;  [\y]_i \in \underset{ [\y]_{i} \in \mathbb{R}}{\mathrm{argmin}}\; \sin( \x+ [\y]_i-[\mathbf{c}]_i), \forall \ i,
-\end{aligned}
+$\min_{ \x \in \mathbb{R}, \y \in \mathbb{R}^n} \Vert \x-a\Vert^2+\Vert \y-a-\mathbf{c}\Vert^2 $
+$ \text{\ s.t.\ }\;  [\y]_i \in \underset{ [\y]_{i} \in \mathbb{R}}{\mathrm{argmin}}\; \sin( \x+ [\y]_i-[\mathbf{c}]_i), \forall \ i,
+
 $
 
 You can adjust the algorithm through parameter setting. We will give the default setting in the following example.
