@@ -11,7 +11,8 @@ pytorch 1.6
 
 We provide examples for optimistic BLO.
 ![avatar](eq20.png)
-
+where $[\mathbf{y}]_i$ denotes the $i$-th component of $\mathbf{y}$, 
+while $a \in \mathbb{R}$ and $\mathbf{c}\in \mathbb{R}^n$ are adjustable parameters set as $a=2$ and $[\mathbf{c}]_i=2, \text{ for any }i = 1,2,\cdots,n$. 
 You can adjust the algorithm through parameter setting. We will give the default setting in the following example.
 The results will be saved in `./result_{time.strftime("%Y_%m_%d_%H_%M_%S")}.csv`
 ```
