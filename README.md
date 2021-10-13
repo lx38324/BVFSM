@@ -33,4 +33,17 @@ python optimistic.py
 --x0 0.
 --y0 0.
   ```
+### Reference
 
+If you find our work useful in your research please consider citing our paper:
+
+```
+@misc{liu2021valuefunctionbased,
+      title={Value-Function-based Sequential Minimization for Bi-level Optimization}, 
+      author={Risheng Liu and Xuan Liu and Shangzhi Zeng and Jin Zhang and Yixuan Zhang},
+      year={2021},
+      eprint={2110.04974},
+      archivePrefix={arXiv},
+      primaryClass={cs.LG}
+}
+```
