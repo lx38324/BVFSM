@@ -1,4 +1,4 @@
-# BVFSM
+# Value-Function-based Sequential Minimization for Bi-level Optimization
 this is the official code for the paper "Value-Function-based Sequential Minimization for Bi-level Optimization"
 
 ## Environment Preparing
