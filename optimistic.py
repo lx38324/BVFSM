@@ -127,7 +127,6 @@ for x_itr in range(x_loop * TK):
     h_opt.zero_grad()
     step_start_time = time.time()
     yhis = []
-    lr_decay_rate = 1 / (1 ** (math.floor(x_itr / TK)))
     if dc == 'log':
         reg_decay_rate = 1 / (math.log(dcr * math.floor((x_itr + 1) / TK)))
     elif dc == 'power1':
@@ -138,9 +137,6 @@ for x_itr in range(x_loop * TK):
         reg_decay_rate = 1 / (math.floor((x_itr + 1) / TK) * dcr)
     else:
         assert 1
-    w_opt.param_groups[0]['lr'] = w_opt.defaults['lr'] * lr_decay_rate
-    h_opt.param_groups[0]['lr'] = h_opt.defaults['lr'] * lr_decay_rate
-    w_z_opt.param_groups[0]['lr'] = w_z_opt.defaults['lr'] * lr_decay_rate
     loss_z_l = 0
 
     for z_itr in range(z_loop):
