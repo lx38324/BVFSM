@@ -33,6 +33,24 @@ python optimistic.py
 --x0 0.
 --y0 0.
   ```
+  
+  In addition, you can also manually change the lower objective *f* ``def lf(x,y)`` and upper objective *F* ``def uF(x,y)`` in the code to test the functions you need
+```
+def lf(x, y):
+    out = 0
+    for i in range(tSize):
+        out = out + torch.sin((x + y[i] - C[i]))
+
+    return out
+
+
+def uF(x, y):
+    return torch.norm(x - a) ** 2 + torch.norm(y - a - C) ** 2
+
+```
+  
+  
+  
 ### Reference
 
 If you find our work useful in your research please consider citing our paper:
